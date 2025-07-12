@@ -1,0 +1,31 @@
+{
+  "name": "com.controleonline.app",
+  "displayName": "Controle Online",
+  "version": "1.0.0",
+  "description": "CRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Controle Online",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-inappbrowser": {}
+    }
+  },
+  "devDependencies": {
+    "cordova-android": "^12.0.1",
+    "cordova-plugin-inappbrowser": "^6.0.0",
+    "cordova-plugin-ionic-webview": "^5.0.1",
+    "cordova-plugin-splashscreen": "^6.0.1"
+  }
+}

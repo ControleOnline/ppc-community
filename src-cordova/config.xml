@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="19" id="com.controleonline.app" version="0.6.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Controle Online</name>
+    <description>CRM</description>
+    <author email="ti@controleonline.com" href="https://app.controleonline.com">
+        Controle Online
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http:///" />
+    <allow-intent href="https:///" />
+    <allow-intent href="lio:*" />
+    <allow-intent href="order:*" />
+    <allow-intent href="payment:*" />
+    <allow-intent href="order:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <access launch-external="yes" origin="lio:*" />
+    <access launch-external="yes" origin="order:*" />
+    <access launch-external="yes" origin="twitter:*" />
+    <allow-intent href="twitter:*" />
+    <plugin name="cordova-plugin-ionic-webview" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <allow-navigation href="about:*" />
+    <platform name="android">
+        <access origin="*" />
+        <engine name="android" spec="^12.0.0" />
+        <preference name="AllowedSchemes" value="https,lio,order,payment" />
+        <preference name="loadUrlTimeoutValue" value="700000" />
+        <preference name="android-minSdkVersion" value="26" />
+        <preference name="android-compileSdkVersion" value="33" />
+        <preference name="android-targetSdkVersion" value="27" />
+        <preference name="AndroidXEnabled" value="true" />
+        <preference name="scheme" value="https" />
+        <preference name="hostname" value="app.lave-go.com" />
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        <preference name="CustomURLSchemePluginClearsAndroidIntent" value="true" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+            <activity android:exported="true" />
+            <application android:largeHeap="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="payment" android:scheme="order" />
+            </intent-filter>
+        </edit-config>
+        <allow-intent href="market:*" />
+        <preference density="hdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash/icon48.png" />
+        <preference density="mdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash/icon88.png" />
+        <preference density="xhdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash/icon144.png" />
+        <preference density="xxhdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash/icon192.png" />
+        <preference density="xxxhdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash/icon512.png" />
+        <preference name="AndroidWindowSplashScreenBackgroundColor" value="#011c3d" />
+        <uses-permission android:name="android.permission.INTERNET" />
+    </platform>
+    <icon src="res/icons/icon512.png" />
+    <allow-navigation href="*" />
+    <allow-navigation href="lio:*" />
+    <allow-navigation href="order:*" />
+    <allow-navigation href="payment:*" />
+    <allow-navigation href="https://app.controleonline.com" />
+    <allow-navigation href="https://app.controleonline.com/*" />
+</widget>

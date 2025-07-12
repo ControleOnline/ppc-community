@@ -1,0 +1,17 @@
+version : '3.4'
+
+services:
+  contabcrm:
+    image         : rchdev/quafront-app:latest
+    container_name: contabcrm-app
+    build         :
+      context: ./
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes       :
+      - ./:/var/www/html/front:rw
+    restart       : "no"
+    stdin_open    : true
+    tty           : true
+    ports         :
+      - "3001:3001"

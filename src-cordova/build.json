@@ -1,0 +1,19 @@
+ 
+{
+    "android": {
+        "debug": {
+            "keystore": "./controleonline.keystore",
+            "storePassword": "controleonline",
+            "alias": "controleonline-alias",
+            "password" : "controleonline",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "./controleonline.keystore",
+            "storePassword": "controleonline",
+            "alias": "controleonline-alias",
+            "password" : "controleonline",
+            "keystoreType": "jks"
+        }
+    }
+}
