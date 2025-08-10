@@ -1,47 +1,19 @@
-# ERP
+# Ppc Controle Online
 
-Controle Online Front End
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/pos-community/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/pos-platform-community/?branch=master)
 
-## Install the dependencies
-```bash
-yarn
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Submodules
-```bash
-git submodule update
-git submodule update --init --recursive
-git submodule update --recursive
-```
-
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/controle-online/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/api-platform-community/?branch=master)
-
-# API - Controle Online
-API - Controle Online
-
-
-### Submodules
-```bash
-git submodule update --init --recursive
-git submodule update --recursive
-```
-
-
-
-<a href="https://github.com/ControleOnline/controle-online" target="_blank">
-  <img src="https://www.controleonline.com/wp-content/uploads/2018/08/aplicaticos_app.png" />
+<a href="https://github.com/ControleOnline/pos-community" target="_blank">
+  <img src="https://www.cielo.com.br/assets_cielo/cielo_store/features/mobile/cielo-lio.png" />
 </a>
+
+
+### Submodules
+```bash
+git submodule update --init --recursive
+git submodule update --recursive
+```
+
+
 
 ### Comercial Contacts
 
@@ -59,9 +31,8 @@ git submodule update --recursive
 
 ### Top contributors
 
-<a href="https://github.com/ControleOnline/controle-online/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=ControleOnline/controle-online" />
+<a href="https://github.com/ControleOnline/pos-community/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=ControleOnline/pos-community" />
 </a>
-
 
 
