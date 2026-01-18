@@ -28,7 +28,7 @@
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data
-          android:host="Ppc"
+          android:host="PPC"
           android:scheme="@string/schema_return" />
       </intent-filter>
     </activity>
