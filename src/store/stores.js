@@ -30,6 +30,10 @@ import invoice from '@controleonline/ui-financial/src/store/invoice';
 import paymentType from '@controleonline/ui-financial/src/store/paymentType';
 import wallet from '@controleonline/ui-financial/src/store/wallet';
 import walletPaymentType from '@controleonline/ui-financial/src/store/walletPaymentType';
+import display_queues from '@controleonline/ui-ppc/src/store/modules/display_queues';
+import displays from '@controleonline/ui-ppc/src/store/modules/displays';
+import order_products_queue from '@controleonline/ui-ppc/src/store/modules/order_products_queue';
+import queues from '@controleonline/ui-ppc/src/store/modules/queues';
 
 export default {
   acl,
@@ -38,6 +42,10 @@ export default {
   categories,
   city,
   configs,
+  display_queues,
+  displays,
+  order_products_queue,
+  queues,
   file,
   device,
   device_config,
