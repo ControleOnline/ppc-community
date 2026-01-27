@@ -72,3 +72,6 @@ package-lock.json
 .expo
 .expo/*
 *.lock
+*.bak
+config/env.local.js
+*.bak
