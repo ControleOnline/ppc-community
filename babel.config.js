@@ -9,6 +9,7 @@ module.exports = api => {
     '@controleonline': './modules/controleonline',
     '@env': './config/env.local.js',
     '@stores': './src/store/stores.js',
+      '@store': './modules/controleonline/ui-common/src/react/stores',
     '@controleonline-rn': './node_modules/@controleonline',
   };
 
