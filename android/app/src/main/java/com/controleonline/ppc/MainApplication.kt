@@ -1,4 +1,4 @@
-package com.controleonline.pos
+package com.controleonline.ppc
 
 import android.app.Application
 import android.content.res.Configuration
