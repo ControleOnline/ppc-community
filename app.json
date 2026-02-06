@@ -3,7 +3,7 @@
     "name": "PPC",
     "displayName": "PPC Controle Online",
     "slug": "ppc-controle-online",
-    "version": "xxx",
+    "version": "1.0.1",
     "platforms": [
       "android",
       "ios",
