@@ -21,6 +21,8 @@ import product_group from '@controleonline/ui-products/src/store/products/produc
 import product_group_product from '@controleonline/ui-products/src/store/products/product_group_product';
 import product_group_feedstock from '@controleonline/ui-products/src/store/products/product_group_feedstock';
 import theme from '@controleonline/ui-layout/src/store/theme';
+import displays from '@controleonline/ui-ppc/src/store/modules/displays';
+import queues from '@controleonline/ui-ppc/src/store/modules/queues';
 import address from '@controleonline/ui-people/src/store/address';
 import documents from '@controleonline/ui-people/src/store/documents';
 import phones from '@controleonline/ui-people/src/store/phones';
@@ -50,6 +52,8 @@ export default {
   product_group,
   product_group_product,
   product_group_feedstock,
+  displays,
+  queues,
   status,
   translate,
   theme,
