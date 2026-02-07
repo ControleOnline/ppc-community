@@ -36,7 +36,6 @@
       "edgeToEdgeEnabled": true,
       "permissions": [
         "VIBRATE",
-        "RECORD_AUDIO",
         "INTERNET"
       ]
     },

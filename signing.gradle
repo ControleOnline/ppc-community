@@ -1,0 +1,23 @@
+import java.util.Properties
+
+gradle.afterProject { project ->
+    if (!project.plugins.hasPlugin("com.android.application")) return
+
+    def propsFile = new File(project.rootProject.projectDir, "./config/android/env.properties")
+    if (!propsFile.exists()) return
+
+    def props = new Properties()
+    propsFile.withInputStream { props.load(it) }
+
+    def android = project.extensions.findByName("android")
+    if (!android) return
+
+    android.signingConfigs.maybeCreate("release").with {
+        storeFile file(props["MYAPP_UPLOAD_STORE_FILE"])
+        storePassword props["MYAPP_UPLOAD_STORE_PASSWORD"]
+        keyAlias props["MYAPP_UPLOAD_KEY_ALIAS"]
+        keyPassword props["MYAPP_UPLOAD_KEY_PASSWORD"]
+    }
+
+    android.buildTypes.release.signingConfig = android.signingConfigs.release
+}
