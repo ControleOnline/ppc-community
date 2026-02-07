@@ -1,19 +1,30 @@
 # POS Controle Online
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/pos-community/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/pos-platform-community/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/controleonline/ppc-community/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/controleonline/pos-platform-community/?branch=master)
 
-<a href="https://github.com/ControleOnline/pos-community" target="_blank">
+<a href="https://github.com/ControleOnline/ppc-community" target="_blank">
   <img src="https://www.cielo.com.br/assets_cielo/cielo_store/features/mobile/cielo-lio.png" />
 </a>
 
 
-### Submodules
+### Install
 ```bash
 git submodule update --init --recursive
 git submodule update --recursive
+npm install
+npx expo prebuild -p android --clean
 ```
 
+### Run Android
+```bash
+npx expo run:android
+```
 
+### Build Android
+```bash
+cd android
+./gradlew bundleRelease --init-script ../signing.gradle
+```
 
 ### Comercial Contacts
 
@@ -31,8 +42,8 @@ git submodule update --recursive
 
 ### Top contributors
 
-<a href="https://github.com/ControleOnline/pos-community/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=ControleOnline/pos-community" />
+<a href="https://github.com/ControleOnline/ppc-community/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=ControleOnline/ppc-community" />
 </a>
 
 

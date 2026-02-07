@@ -3,7 +3,7 @@ import java.util.Properties
 gradle.afterProject { project ->
     if (!project.plugins.hasPlugin("com.android.application")) return
 
-    def propsFile = new File(project.rootProject.projectDir, "./config/android/env.properties")
+    def propsFile = new File(project.rootProject.projectDir, "../config/android/env.properties")
     if (!propsFile.exists()) return
 
     def props = new Properties()
