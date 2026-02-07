@@ -1,0 +1,15 @@
+import java.util.Properties
+
+def props = new Properties()
+def propsFile = new File(rootDir, "../config/android/env.properties")
+
+if (propsFile.exists()) {
+    propsFile.withInputStream { props.load(it) }
+}
+
+gradle.beforeProject { project ->
+    project.ext.MYAPP_UPLOAD_STORE_FILE = props["MYAPP_UPLOAD_STORE_FILE"]
+    project.ext.MYAPP_UPLOAD_STORE_PASSWORD = props["MYAPP_UPLOAD_STORE_PASSWORD"]
+    project.ext.MYAPP_UPLOAD_KEY_ALIAS = props["MYAPP_UPLOAD_KEY_ALIAS"]
+    project.ext.MYAPP_UPLOAD_KEY_PASSWORD = props["MYAPP_UPLOAD_KEY_PASSWORD"]
+}
