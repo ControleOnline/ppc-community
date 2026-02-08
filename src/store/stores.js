@@ -32,6 +32,9 @@ import invoice from '@controleonline/ui-financial/src/store/invoice';
 import paymentType from '@controleonline/ui-financial/src/store/paymentType';
 import wallet from '@controleonline/ui-financial/src/store/wallet';
 import walletPaymentType from '@controleonline/ui-financial/src/store/walletPaymentType';
+import order_products_queue from '@controleonline/ui-ppc/src/store/modules/order_products_queue';
+import display_queues from '@controleonline/ui-ppc/src/store/modules/display_queues';
+
 
 export default {
   acl,
@@ -52,6 +55,8 @@ export default {
   product_group,
   product_group_product,
   product_group_feedstock,
+  order_products_queue,
+  display_queues,
   displays,
   queues,
   status,

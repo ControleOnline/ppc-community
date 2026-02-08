@@ -1,6 +1,6 @@
 {
   "name": "ppc",
-  "version": "1.0.151",
+  "version": "1.0.152",
   "private": true,
   "scripts": {
     "android": "expo run:android",
